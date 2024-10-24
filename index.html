@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tienda Online</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda Online</h1>
+        <input type="text" id="search" placeholder="Buscar producto..." autocomplete="off">
+        <button id="searchButton">Buscar</button>
+        <div id="suggestions" class="hidden"></div>
+        <div id="noResults" class="hidden">No se encontró un producto con ese nombre.</div>
+        <div id="cartInfo">
+            Carrito: <span id="cartCount">0</span> items
+            <a href="cart.html">Ver Carrito</a>
+        </div>
+    </header>
+    <main>
+        <div id="productList"></div>
+        <div id="confirmation" class="hidden"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
